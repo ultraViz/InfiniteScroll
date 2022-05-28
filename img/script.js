@@ -1,4 +1,4 @@
-const imageContainer = document.getElementById('image_container');
+const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
 let ready = false;
@@ -62,7 +62,6 @@ async function getPhotos() {
     displayPhotos();
   } catch (error) {
     // Catch Error Here
-    console.log(error)
   }
 }
 
@@ -71,7 +70,6 @@ window.addEventListener('scroll', () => {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000 && ready) {
     ready = false;
     getPhotos();
-    
   }
 });
 
